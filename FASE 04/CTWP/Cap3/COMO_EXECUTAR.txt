@@ -1,0 +1,34 @@
+============================================================
+CAP 3 (IR ALEM) - Classificacao de Graos com Machine Learning
+Aluno: Douglas Felicio da Silva | FIAP - Fase 4
+============================================================
+
+ENTREGAVEL PRINCIPAL:
+  notebooks/Classificacao_Graos_Seeds.ipynb   (notebook Jupyter)
+  notebooks/Classificacao_Graos_Seeds.html    (versao para abrir no navegador, sem instalar nada)
+
+COMO ABRIR O NOTEBOOK
+------------------------------------------------------------
+Opcao A - so visualizar (mais facil):
+  Abra notebooks/Classificacao_Graos_Seeds.html no navegador.
+
+Opcao B - rodar o notebook:
+  pip install -r requirements.txt
+  jupyter notebook notebooks/Classificacao_Graos_Seeds.ipynb
+  (ou abra no Google Colab e suba o arquivo data/seeds_dataset.csv)
+
+Opcao C - rodar como script Python:
+  pip install -r requirements.txt
+  python src/classificacao_graos.py
+  (gera os graficos em assets/ e imprime as metricas no terminal)
+
+DADOS
+------------------------------------------------------------
+data/seeds_dataset.csv  -> Seeds Dataset (UCI, id 236)
+210 amostras | 3 variedades (Kama, Rosa, Canadian) | 7 atributos fisicos
+
+METODOLOGIA: CRISP-DM
+RESULTADO: 5 algoritmos comparados; Random Forest ~92% de acuracia no teste;
+SVM com ~96% em validacao cruzada apos GridSearchCV.
+
+REPOSITORIO GITHUB: https://github.com/DougFel/fiap-fase4-cap3-classificacao-graos
